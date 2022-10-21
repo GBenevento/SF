@@ -57,6 +57,18 @@ try
     echo 'Caught exception: ', $e->getMessage(), "<br>";
 }
 
+
+try
+{
+    $mat1 = $array[[2, 3, 4], [1, 0, 3]];
+    $mat2 = $array[[0, 3, 2], [9, 5, 0]];
+    echo $calc->sumaMatrices($mat1, $mat2) . "<br>";
+
+} catch (Exception $e) {
+
+    echo 'Caught exception: ', $e->getMessage(), "<br>";
+}
+
 ?>
 </body>
 </html>

@@ -36,7 +36,9 @@ class Calculadora
 
         if (strlen($cadenaBits) > 8) {
             throw new Exception('Only 8 bits are allowed');
-        } else {
+        } 
+        else 
+        {
             $total = 0;
 
             $inverted = strrev($cadenaBits);
@@ -70,5 +72,28 @@ class Calculadora
     public function esCapicua($string)
     {
        return (strrev($string) == $string);
+    }
+
+    public function sumaMatrices($first_mat, $second_mat)
+    {
+
+        if (count($first_mat) != count($second_mat)) {
+            throw new Exception('The arrays must be the same length');
+        } 
+        else 
+        {
+        $sum_mat = $array[];
+       for ($i=0; $i < count($first_mat) ; $i++) 
+       { 
+        $temp_mat = $array[];
+        for ($j=0; $j < count($first_mat[$i]); $j++) { 
+            $sum = $first_mat[$i][$j]+ $second_mat[$i][$j];
+            array_push($temp_mat, $sum);
+        }
+        array_push($sum_mat, $temp_mat);
+       }
+
+       return $sum_mat;
+    }
     }
 }
