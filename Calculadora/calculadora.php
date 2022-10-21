@@ -82,10 +82,10 @@ class Calculadora
         } 
         else 
         {
-        $sum_mat = $array[];
+        $sum_mat = [];
        for ($i=0; $i < count($first_mat) ; $i++) 
        { 
-        $temp_mat = $array[];
+        $temp_mat = [];
         for ($j=0; $j < count($first_mat[$i]); $j++) { 
             $sum = $first_mat[$i][$j]+ $second_mat[$i][$j];
             array_push($temp_mat, $sum);
