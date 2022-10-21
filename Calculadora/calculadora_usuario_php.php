@@ -60,9 +60,10 @@ try
 
 try
 {
-    $mat1 = $array[[2, 3, 4], [1, 0, 3]];
-    $mat2 = $array[[0, 3, 2], [9, 5, 0]];
-    echo $calc->sumaMatrices($mat1, $mat2) . "<br>";
+    $mat1 = [[2, 3, 4], [1, 0, 3]];
+    $mat2 = [[0, 3, 2], [9, 5, 0]];
+    print_r($calc->sumaMatrices($mat1, $mat2) );
+    echo  "<br>";
 
 } catch (Exception $e) {
 
